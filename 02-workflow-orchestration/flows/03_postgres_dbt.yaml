@@ -43,7 +43,7 @@ tasks:
             host: host.docker.internal
             user: kestra
             password: k3str4
-            port: 5432
+            port: 5433
             dbname: postgres-zoomcamp
             schema: public
             threads: 8
