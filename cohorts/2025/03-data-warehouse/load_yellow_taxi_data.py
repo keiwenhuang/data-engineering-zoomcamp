@@ -1,20 +1,20 @@
 import os
 import sys
+import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
-from google.cloud import storage
-from google.api_core.exceptions import NotFound, Forbidden
-import time
 
+from google.api_core.exceptions import Forbidden, NotFound
+from google.cloud import storage
 
 # Change this to your bucket name
-BUCKET_NAME = "dezoomcamp_hw3_2025"
+BUCKET_NAME = "refined-dezoomcamp_hw3_2025"
 
 # If you authenticated through the GCP SDK you can comment out these two lines
 CREDENTIALS_FILE = "gcs.json"
 client = storage.Client.from_service_account_json(CREDENTIALS_FILE)
 # If commented initialize client with the following
-# client = storage.Client(project='zoomcamp-mod3-datawarehouse')
+# client = storage.Client(project="refined-cortex-460500-i2")
 
 
 BASE_URL = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-"

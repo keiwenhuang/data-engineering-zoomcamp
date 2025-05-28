@@ -17,3 +17,5 @@ serving_dir
 
 /dez_env
 .python-version
+gcs.json
+*.parquet
