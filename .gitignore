@@ -19,3 +19,4 @@ serving_dir
 .python-version
 gcs.json
 *.parquet
+*.gz
