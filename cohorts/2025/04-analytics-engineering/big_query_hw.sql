@@ -15,3 +15,5 @@ OPTIONS (
   format = 'PARQUET',
   uris = ['gs://refined-cortex-460500-i2-kestra/yellow/yellow_tripdata_*.parquet']
 );
+
+
